@@ -1,0 +1,107 @@
+:root{
+    --lightblue:#659bd8;
+    --darkgrey:#333;
+    --lightgrey:#f3f3f3;
+    --grey:#5b6065;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color:var(--darkgrey);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: var(--lightgrey);
+}
+.wrapper{
+    max-width: 1600px;
+    margin: auto auto;
+}
+
+/* estilo do hero section */
+.site-hero{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    margin: 6rem 0rem;
+}
+    .site-hero h1{
+        font-size: 2rem;
+    }
+        .random-color{
+            color:var(--lightblue);
+            position: relative;
+        }
+        .ancho{
+            position: relative;
+        }
+        .anchor::before{
+            position: absolute;
+            content: "";
+            border: 1px solid;
+            border-color:  var(--grey);
+            transform: translate(8px,19px);
+            height: 0.3rem;
+            animation: scrolling 0.52s 4 ease-in-out forwards;
+            animation-delay: 4.5s;
+        }
+        @keyframes scrolling{
+            from{
+               opacity: 1;
+            }
+            to{
+                opacity: 0;
+                height: 0.5rem;
+            }
+        }
+/* cards */
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-block-end: 3rem;
+    padding: 1rem;
+}
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .card-content{
+        display: flex;
+        flex-flow: column;
+    }
+    .card-content button{
+        border:0px;
+        width: fit-content;
+        align-self: flex-end;
+        padding:1rem;
+        cursor: pointer;
+        color: var(--lightblue);
+    }
+    .card-content button:hover{
+        background:var(--lightblue);
+        color: var(--lightgrey);
+        transition: background 0.35s ease-in-out, color 0.35s ease-in-out;
+    }
+    
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    background:var(--lightblue);
+}    
+    .footer p{
+        margin: 0px;
+        padding: 0.5em;
+        color: var(--lightgrey);
+    }
+
+/* medias */
+@media(min-width:840px){
+    .gallery-deck{
+        display: flex;
+    }
+}

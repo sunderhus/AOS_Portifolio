@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animate with AOS -  Tutorial</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+</style>
+<body>
+    <header>
+        <section class="site-hero">
+            <h1><span class="random-color">A<span class="anchor">O</span>S</span> with Gallery</h1>
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+        </section>
+    </header>
+    <main class="gallery-deck wrapper">
+        <section  data-aos="fade-left" class="wrapper card">
+            <img src="https://images.unsplash.com/photo-1564089915105-db97895bdd78?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=900" alt="art example">
+            <div class="wrapper card-content">
+                <h3>Photo of the day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta magni, quia blanditiis animi aliquam eveniet reprehenderit iste quo optio molestias fugit repellendus fuga amet obcaecati? Nesciunt ipsa eligendi facere.</p>
+                <button>Buy now</button>
+            </div>
+        </section>
+        <section  data-aos="fade-right" class="wrapper card">
+            <img src="https://source.unsplash.com/900x600/?abstract,entropy" alt="art example">
+            <div class="wrapper card-content">
+                <h3>Photo of the day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta magni, quia blanditiis animi aliquam eveniet reprehenderit iste quo optio molestias fugit repellendus fuga amet obcaecati? Nesciunt ipsa eligendi facere.</p>
+                <button>Buy now</button>
+            </div>
+        </section>
+        <section  data-aos="fade-up"class="wrapper card">
+            <img src="https://images.unsplash.com/photo-1470332119358-ff1482a9fd5d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=900" alt="art example">
+            <div class="wrapper card-content">
+                <h3>Photo of the day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta magni, quia blanditiis animi aliquam eveniet reprehenderit iste quo optio molestias fugit repellendus fuga amet obcaecati? Nesciunt ipsa eligendi facere.</p>
+                <button>Buy now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <p>Developed by - Matheus Sunderhus</p>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset:350,
+          duration:1000,
+      });
+    </script>
+</body>
+</html>
